@@ -24,3 +24,6 @@ data = pd.DataFrame({
 })
 sns.barplot(data=data, x='language', y='total')
 plt.show()
+
+sns.catplot(data=movies.query('original_language != "en"'), kind='count', x="original_language")
+plt.show()
