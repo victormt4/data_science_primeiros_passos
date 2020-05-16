@@ -29,5 +29,5 @@ sns.boxplot(ratings_per_movie)
 plt.show()
 
 plt.title('Historiograma da media das notas por filme usando Seaborn:')
-sns.distplot(ratings_per_movie)
+sns.distplot(ratings_per_movie, bins=10)  # bins configura a quantidade de colunas que aparecem
 plt.show()
