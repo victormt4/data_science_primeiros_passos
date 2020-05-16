@@ -6,6 +6,7 @@ ratings = pd.read_csv('./ml-latest-small/ratings.csv')
 
 print('Media: ', ratings.rating.mean())
 print('Mediana: ', ratings.rating.median())
+print('Frequencia:\n', ratings.rating.value_counts())
 
 plt.title('Historiograma da frequencia das notas:')
 ratings.rating.plot(kind='hist')
